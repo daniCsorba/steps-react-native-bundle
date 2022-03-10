@@ -5,7 +5,7 @@ description: |
   
   ### Configuring the Step
 
-  1. Add the React Native bundle Step after the **Install React Native** Step in your Workflow. 
+  1. Add the **React Native bundle** Step after the **Install React Native** Step in your Workflow. 
   1. In the **Bundle platform** input, select the platform for the bundler. 
 
      The options are: 
@@ -13,13 +13,13 @@ description: |
      - `ios`
 
   1. Make sure the **Entry file** input points to the root JS file of your project.
-  1. (Optional) You can configure the Step further using the optional inputs, for example, you can disable warnings and minify the bundle using the **DEV flag** input. 
+  1. (Optional) You can further configure the Step using the optional inputs. For example, you can disable warnings and minify the bundle using the **DEV flag** input. 
   1. Start/Schedule a Build. 
 
   ### Troubleshooting
 
-  If your build fails with error message `react-native command not found`, make sure to include the **Install React Native** Step before the **React Native bundle** Step. 
-  If you run in to any dependency issues, make sure to include either a **Run npm command** Step or a **Run yarn command** Step before the **React Native bundle** Step.
+  If your build fails with the error message `react-native command not found`, make sure to include the **Install React Native** Step before the **React Native bundle** Step. 
+  If you run into any dependency issues, make sure to include either a **Run npm command** Step or a **Run yarn command** Step before the **React Native bundle** Step.
 
   ### Useful links
 
